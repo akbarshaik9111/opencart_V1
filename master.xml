@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Master Suite">
+
+  <listeners>
+  	<listener class-name="in.akbar.utilities.ExtentReportManager"/>
+  </listeners>
+  
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="edge"/>
+  <parameter name="os" value="windows"/>
+    <classes>
+      <class name="in.akbar.testcases.TC001_AccountRegistrationTest"/>
+      <class name="in.akbar.testcases.TC002_LoginTest"/>
+      <!--<class name="in.akbar.testcases.TC003_LoginDataDrivenTest"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
